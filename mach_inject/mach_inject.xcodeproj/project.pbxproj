@@ -133,14 +133,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		33B2AC35092854CE004B1632 /* Development */ = {
+		33B2AC35092854CE004B1632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -150,9 +145,9 @@
 				PRODUCT_NAME = mach_inject;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		33B2AC36092854CE004B1632 /* Deployment */ = {
+		33B2AC36092854CE004B1632 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -162,34 +157,24 @@
 				PRODUCT_NAME = mach_inject;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		33B2AC37092854CE004B1632 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				INSTALL_PATH = "$(HOME)/bin";
-				PRODUCT_NAME = mach_inject;
-			};
-			name = Default;
-		};
-		33B2AC39092854CE004B1632 /* Development */ = {
+		33B2AC39092854CE004B1632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
-			name = Development;
+			name = Debug;
 		};
-		33B2AC3A092854CE004B1632 /* Deployment */ = {
+		33B2AC3A092854CE004B1632 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+					x86_64,
+				);
 			};
-			name = Deployment;
-		};
-		33B2AC3B092854CE004B1632 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -197,22 +182,20 @@
 		33B2AC34092854CE004B1632 /* Build configuration list for PBXNativeTarget "mach_inject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33B2AC35092854CE004B1632 /* Development */,
-				33B2AC36092854CE004B1632 /* Deployment */,
-				33B2AC37092854CE004B1632 /* Default */,
+				33B2AC35092854CE004B1632 /* Debug */,
+				33B2AC36092854CE004B1632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 		33B2AC38092854CE004B1632 /* Build configuration list for PBXProject "mach_inject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33B2AC39092854CE004B1632 /* Development */,
-				33B2AC3A092854CE004B1632 /* Deployment */,
-				33B2AC3B092854CE004B1632 /* Default */,
+				33B2AC39092854CE004B1632 /* Debug */,
+				33B2AC3A092854CE004B1632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

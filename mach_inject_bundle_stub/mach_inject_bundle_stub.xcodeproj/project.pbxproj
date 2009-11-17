@@ -190,7 +190,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		33B2AC4B092854FB004B1632 /* Development */ = {
+		33B2AC4B092854FB004B1632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = (
@@ -229,9 +229,9 @@
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		33B2AC4C092854FB004B1632 /* Deployment */ = {
+		33B2AC4C092854FB004B1632 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
@@ -263,59 +263,19 @@
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		33B2AC4D092854FB004B1632 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_TRIGRAPHS = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = mach_inject_bundle_stub_Prefix.pch;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_UNKNOWN_PRAGMAS = NO;
-				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				LIBRARY_SEARCH_PATHS = "";
-				LIBRARY_STYLE = Bundle;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = mach_inject_bundle_stub;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Default;
-		};
-		33B2AC4F092854FB004B1632 /* Development */ = {
+		33B2AC4F092854FB004B1632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
-			name = Development;
+			name = Debug;
 		};
-		33B2AC50092854FB004B1632 /* Deployment */ = {
+		33B2AC50092854FB004B1632 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
-			name = Deployment;
-		};
-		33B2AC51092854FB004B1632 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -323,22 +283,20 @@
 		33B2AC4A092854FB004B1632 /* Build configuration list for PBXNativeTarget "mach_inject_bundle_stub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33B2AC4B092854FB004B1632 /* Development */,
-				33B2AC4C092854FB004B1632 /* Deployment */,
-				33B2AC4D092854FB004B1632 /* Default */,
+				33B2AC4B092854FB004B1632 /* Debug */,
+				33B2AC4C092854FB004B1632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 		33B2AC4E092854FB004B1632 /* Build configuration list for PBXProject "mach_inject_bundle_stub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33B2AC4F092854FB004B1632 /* Development */,
-				33B2AC50092854FB004B1632 /* Deployment */,
-				33B2AC51092854FB004B1632 /* Default */,
+				33B2AC4F092854FB004B1632 /* Debug */,
+				33B2AC50092854FB004B1632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

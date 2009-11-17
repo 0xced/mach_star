@@ -11,20 +11,18 @@
 		7980E19C0967BDF5008E181F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		7980E1DE0967BFD8008E181F /* injectee-MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1DC0967BFD8008E181F /* injectee-MainMenu.nib */; };
 		7980E1E10967C004008E181F /* injectee-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1DF0967C004008E181F /* injectee-InfoPlist.strings */; };
-		7980E1E40967C034008E181F /* injectee-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7980E1970967BDAE008E181F /* injectee-Info.plist */; };
-		7980E1E50967C038008E181F /* injector-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* injector-Info.plist */; };
 		7980E1FF0967C101008E181F /* mach_inject_test_injectee.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7980E1950967BDAE008E181F /* mach_inject_test_injectee.app */; };
 		7980E22A0967C20F008E181F /* injector-AppDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7980E2280967C20F008E181F /* injector-AppDelegate.h */; };
 		7980E22B0967C20F008E181F /* injector-AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7980E2290967C20F008E181F /* injector-AppDelegate.m */; };
 		79AE5E1A0967CAB2009E2304 /* injectee-AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AE5E190967CAB2009E2304 /* injectee-AppDelegate.m */; };
 		79AE5E330967CEFA009E2304 /* mach_inject_test_injected.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7980E20F0967C156008E181F /* mach_inject_test_injected.bundle */; };
-		79AE5F100967D18E009E2304 /* mach_inject_bundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AE5F0F0967D18E009E2304 /* mach_inject_bundle.framework */; };
-		79AE5F180967D1AC009E2304 /* mach_inject_bundle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79AE5F0F0967D18E009E2304 /* mach_inject_bundle.framework */; };
 		79AE5F990967D4C8009E2304 /* injected-PrincipalClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AE5F980967D4C8009E2304 /* injected-PrincipalClass.m */; };
 		8D11072A0486CEB800E47090 /* injector-MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* injector-MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* injector-InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* injector-InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		DAFC39FE10B29B1D00E4CD8A /* mach_inject_bundle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AE5EA60967CFEB009E2304 /* mach_inject_bundle.framework */; };
+		DAFC3A0110B29B2200E4CD8A /* mach_inject_bundle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79AE5EA60967CFEB009E2304 /* mach_inject_bundle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +74,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				79AE5F180967D1AC009E2304 /* mach_inject_bundle.framework in CopyFiles */,
+				DAFC3A0110B29B2200E4CD8A /* mach_inject_bundle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				79AE5F100967D18E009E2304 /* mach_inject_bundle.framework in Frameworks */,
+				DAFC39FE10B29B1D00E4CD8A /* mach_inject_bundle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +332,6 @@
 			files = (
 				7980E1DE0967BFD8008E181F /* injectee-MainMenu.nib in Resources */,
 				7980E1E10967C004008E181F /* injectee-InfoPlist.strings in Resources */,
-				7980E1E40967C034008E181F /* injectee-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +348,6 @@
 			files = (
 				8D11072A0486CEB800E47090 /* injector-MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* injector-InfoPlist.strings in Resources */,
-				7980E1E50967C038008E181F /* injector-Info.plist in Resources */,
 				79AE5E330967CEFA009E2304 /* mach_inject_test_injected.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,7 +437,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7980E1990967BDAE008E181F /* Development */ = {
+		7980E1990967BDAE008E181F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -465,15 +461,11 @@
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		7980E19A0967BDAE008E181F /* Deployment */ = {
+		7980E19A0967BDAE008E181F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -493,9 +485,9 @@
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		7980E2120967C156008E181F /* Development */ = {
+		7980E2120967C156008E181F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -519,15 +511,11 @@
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		7980E2130967C156008E181F /* Deployment */ = {
+		7980E2130967C156008E181F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				COPY_PHASE_STRIP = YES;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -547,9 +535,9 @@
 				WRAPPER_EXTENSION = bundle;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		C01FCF4B08A954540054247B /* Development */ = {
+		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -567,15 +555,11 @@
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		C01FCF4C08A954540054247B /* Deployment */ = {
+		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(FRAMEWORK_SEARCH_PATHS)",
 					"$(SRCROOT)/../mach_inject_bundle/build/Deployment",
@@ -587,27 +571,30 @@
 				PRODUCT_NAME = mach_inject_test_injector;
 				WRAPPER_EXTENSION = app;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		C01FCF4F08A954540054247B /* Development */ = {
+		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.4;
 			};
-			name = Development;
+			name = Debug;
 		};
-		C01FCF5008A954540054247B /* Deployment */ = {
+		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+					x86_64,
+				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.4;
 			};
-			name = Deployment;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -615,38 +602,38 @@
 		7980E1980967BDAE008E181F /* Build configuration list for PBXNativeTarget "injectee_app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7980E1990967BDAE008E181F /* Development */,
-				7980E19A0967BDAE008E181F /* Deployment */,
+				7980E1990967BDAE008E181F /* Debug */,
+				7980E19A0967BDAE008E181F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Deployment;
+			defaultConfigurationName = Release;
 		};
 		7980E2110967C156008E181F /* Build configuration list for PBXNativeTarget "injected_bundle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7980E2120967C156008E181F /* Development */,
-				7980E2130967C156008E181F /* Deployment */,
+				7980E2120967C156008E181F /* Debug */,
+				7980E2130967C156008E181F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Deployment;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "injector_app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C01FCF4B08A954540054247B /* Development */,
-				C01FCF4C08A954540054247B /* Deployment */,
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Deployment;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "mach_inject_test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C01FCF4F08A954540054247B /* Development */,
-				C01FCF5008A954540054247B /* Deployment */,
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Deployment;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

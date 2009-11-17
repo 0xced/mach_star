@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33B2ACBD09285792004B1632 /* mach_inject_bundle_stub.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 33B2ACBC09285792004B1632 /* mach_inject_bundle_stub.bundle */; };
 		79ACC85907FD3EBD00D4147B /* mach_inject_bundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 79ACC85707FD3EBD00D4147B /* mach_inject_bundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79ACC85A07FD3EBD00D4147B /* mach_inject_bundle.c in Sources */ = {isa = PBXBuildFile; fileRef = 79ACC85807FD3EBD00D4147B /* mach_inject_bundle.c */; };
 		79ACC88707FD40D700D4147B /* mach_inject.c in Sources */ = {isa = PBXBuildFile; fileRef = 79ACC88507FD40D700D4147B /* mach_inject.c */; };
@@ -15,6 +14,7 @@
 		79ACC8DC07FD452E00D4147B /* mach_inject_bundle_stub.h in Headers */ = {isa = PBXBuildFile; fileRef = 79ACC8DB07FD452E00D4147B /* mach_inject_bundle_stub.h */; };
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		DAE6DD9110B00F7B0063610B /* mach_inject_bundle_stub.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 33B2AC8809285572004B1632 /* mach_inject_bundle_stub.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,6 @@
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		32DBCF5E0370ADEE00C91783 /* mach_inject_bundle_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_inject_bundle_Prefix.pch; sourceTree = "<group>"; };
 		33B2AC8109285572004B1632 /* mach_inject_bundle_stub.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mach_inject_bundle_stub.xcodeproj; path = ../mach_inject_bundle_stub/mach_inject_bundle_stub.xcodeproj; sourceTree = SOURCE_ROOT; };
-		33B2ACBC09285792004B1632 /* mach_inject_bundle_stub.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mach_inject_bundle_stub.bundle; path = ../mach_inject_bundle_stub/build/Development/mach_inject_bundle_stub.bundle; sourceTree = SOURCE_ROOT; };
 		79ACC85707FD3EBD00D4147B /* mach_inject_bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_inject_bundle.h; sourceTree = "<group>"; };
 		79ACC85807FD3EBD00D4147B /* mach_inject_bundle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach_inject_bundle.c; sourceTree = "<group>"; };
 		79ACC88507FD40D700D4147B /* mach_inject.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = mach_inject.c; path = ../mach_inject/mach_inject.c; sourceTree = SOURCE_ROOT; };
@@ -87,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				33B2AC8109285572004B1632 /* mach_inject_bundle_stub.xcodeproj */,
-				33B2ACBC09285792004B1632 /* mach_inject_bundle_stub.bundle */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				089C1665FE841158C02AAC07 /* Resources */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
@@ -228,7 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33B2ACBD09285792004B1632 /* mach_inject_bundle_stub.bundle in Resources */,
+				DAE6DD9110B00F7B0063610B /* mach_inject_bundle_stub.bundle in Resources */,
 				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,14 +265,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		33B2AC7809285567004B1632 /* Development */ = {
+		33B2AC7809285567004B1632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-					x86_64,
-				);
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -297,12 +290,11 @@
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = YES;
 			};
-			name = Development;
+			name = Debug;
 		};
-		33B2AC7909285567004B1632 /* Deployment */ = {
+		33B2AC7909285567004B1632 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -323,47 +315,24 @@
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
 			};
-			name = Deployment;
+			name = Release;
 		};
-		33B2AC7A09285567004B1632 /* Default */ = {
+		33B2AC7C09285567004B1632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = mach_inject_bundle_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				LIBRARY_STYLE = DYNAMIC;
-				MACH_O_TYPE = mh_dylib;
-				OTHER_LDFLAGS = (
-					"-seg1addr",
-					0xc0000000,
+			};
+			name = Debug;
+		};
+		33B2AC7D09285567004B1632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+					x86_64,
 				);
-				PRODUCT_NAME = mach_inject_bundle;
-				WRAPPER_EXTENSION = framework;
 			};
-			name = Default;
-		};
-		33B2AC7C09285567004B1632 /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Development;
-		};
-		33B2AC7D09285567004B1632 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Deployment;
-		};
-		33B2AC7E09285567004B1632 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Default;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -371,22 +340,20 @@
 		33B2AC7709285567004B1632 /* Build configuration list for PBXNativeTarget "mach_inject_bundle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33B2AC7809285567004B1632 /* Development */,
-				33B2AC7909285567004B1632 /* Deployment */,
-				33B2AC7A09285567004B1632 /* Default */,
+				33B2AC7809285567004B1632 /* Debug */,
+				33B2AC7909285567004B1632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 		33B2AC7B09285567004B1632 /* Build configuration list for PBXProject "mach_inject_bundle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33B2AC7C09285567004B1632 /* Development */,
-				33B2AC7D09285567004B1632 /* Deployment */,
-				33B2AC7E09285567004B1632 /* Default */,
+				33B2AC7C09285567004B1632 /* Debug */,
+				33B2AC7D09285567004B1632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
